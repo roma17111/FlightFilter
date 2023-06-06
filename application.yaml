@@ -11,4 +11,5 @@ check-connection: Property file connected
 # filters: DepartingInPast DepartsBeforeArrives MoreTwoHoursGroundTime
 #
 flightFilters: DepartingInPast DepartsBeforeArrives
+filters: DepartingInPast DepartsBeforeArrives MoreTwoHoursGroundTime
 

@@ -14,7 +14,7 @@ import java.util.Properties;
 public class FlightFilterFactory {
 
     private static final FlightFilterFactory INSTANCE;
-    private static final String PACKAGE = "com.gridnine.testing.filter_impls.";
+    private static final String PACKAGE = "com.gridnine.testing.filter.impl.";
     private static final File PROPERTY_FILE = new File("application.yaml");
     private static final String FLIGHT_FILTERS = "flightFilters";
     private static final String CHECK_CONNECTION = "check-connection";

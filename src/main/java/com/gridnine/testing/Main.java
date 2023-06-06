@@ -10,15 +10,10 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        BasicConfigurator.configure();
-        try {
-            List<Flight> flights = FlightBuilder.createFlights();
+        List<Flight> flights = FlightBuilder.createFlights();
+        flights.stream().filter(FlightFilters::check)
+                .forEach(flight -> Log.info(flight.toString()));
 
-            flights.stream().filter(FlightFilters::check)
-                    .forEach(flight -> Log.info(flight.toString()));
-        } catch (Exception e) {
-            Log.error(e);
-        }
     }
 
 }
